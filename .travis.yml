@@ -12,8 +12,8 @@ before_install:
   - mv clitest testador
 
 script:
-  - ./util/requisitos.sh
-  - ./testador/run funcoeszz.md
+  - make lint
+  - make test-core
   - ./testador/run internet_travis
 
 notifications:
